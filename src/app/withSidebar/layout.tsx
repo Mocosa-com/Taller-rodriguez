@@ -6,11 +6,12 @@ export default function WithSidebarLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex">
+    <div className="flex min-h-screen">
       <SideBar />
-      <main className="flex-1">
+      <main className="flex-1 flex flex-col">
         {children}
       </main>
     </div>
   );
 }
+

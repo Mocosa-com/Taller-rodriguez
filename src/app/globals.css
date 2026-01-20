@@ -17,6 +17,7 @@
     padding: 5px;
     padding-left: 13px;
 }
+
 .item-activo {
     background-color: #FBDBD4;
     border-radius: 15px;
@@ -36,7 +37,7 @@
   .item-usuario {
     margin-top: auto;
   }
-  
+
   .comic-neue-light {
     font-family: "Comic Neue", cursive;
     font-weight: 300;

@@ -3,5 +3,9 @@ import Clientes from "./Clientes";
 
 
 export default function Page() {
-  return <Clientes />;
+  return (
+    <main className="flex">
+      <Clientes />
+    </main>
+  );
 }
