@@ -69,6 +69,12 @@ export default function LoginForm() {
         />
       </div>
 
+
+<div className="col-span-3">
+        <button className="bg-red-600 w-full py-2 rounded text-white text-sm font-semibold hover:bg-red-700 shadow-md">
+          Agregar tarjeta de circulacion
+        </button>
+      </div>
       {/* Botón */}
       <div className="col-span-3">
         <button className="bg-red-600 w-full py-2 rounded text-white text-sm font-semibold hover:bg-red-700 shadow-md">
