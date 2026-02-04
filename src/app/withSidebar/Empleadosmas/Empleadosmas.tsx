@@ -8,18 +8,22 @@ export default function LoginForm() {
   const [correo, setCorreo] = useState("");
   const [dui, setDui] = useState("");
 
+
+
+
   return (
+    
     <div className="grid grid-cols-3 gap-4">
-      
-      <div className="col-span-3">
+
+        <div className="col-span-3">
         <h2 className="text-3xl font-bold text-center mb-6 text-gray-900 tracking-wide">
-         Agregar Cliente
+         Agregar empleado
              </h2>
              </div>
-
+      
       {/* Nombre */}
       <div className="col-span-2">
-        <label className="text-sm font-bold">Nombre de Cliente</label>
+        <label className="text-sm font-bold">Nombre del Empleado </label>
         <input
           className="mt-1 w-full border border-gray-300 text-sm font-semibold pl-2 py-1 rounded"
           type="text"
@@ -41,13 +45,13 @@ export default function LoginForm() {
         />
       </div>
 
-      {/* Dirección*/}
+      {/* fecha de contratacion */}
       <div className="col-span-2">
-        <label className="text-sm font-bold">Dirección</label>
+        <label className="text-sm font-bold">Fecha de Contratación</label>
         <input
           className="mt-1 w-full border border-gray-300 text-sm font-semibold pl-2 py-1 rounded"
-          type="text"
-          placeholder="Dirección"
+          type="date"
+          placeholder="Fecha de Contratación"
         />
       </div>
 
@@ -63,28 +67,47 @@ export default function LoginForm() {
         />
       </div>
 
-      {/* Correo*/}
-      <div className="col-span-3">
-        <label className="text-sm font-bold">Correo electrónico</label>
+      {/* Sueldo base*/}
+      <div className="col-span-2">
+        <label className="text-sm font-bold">Sueldo Base</label>
         <input
           className="mt-1 w-full border border-gray-300 text-sm font-semibold pl-2 py-1 rounded"
-          type="email"
-          placeholder="Correo"
-          value={correo}
-          onChange={e => setCorreo(e.target.value)}
+          type="number"
+          placeholder="Sueldo Base"
         />
       </div>
 
-
-<div className="col-span-3">
-        <button className="bg-red-600 w-full py-2 rounded text-white text-sm font-semibold hover:bg-red-700 shadow-md">
-          Agregar tarjeta de circulacion
-        </button>
+      {/* Porcentaje de ganancia*/}
+      <div className="col-span-1">
+        <label className="text-sm font-bold">Porcentaje de Ganancia</label>
+        <input
+          className="mt-1 w-full border border-gray-300 text-sm font-semibold pl-2 py-1 rounded"
+          type="number"
+          placeholder="Porcentaje de Ganancia"
+        />
       </div>
+
+<div className="col-span-3 flex items-center gap-2">
+  <input
+    type="checkbox"
+    id="licencia"
+    className="h-4 w-4 accent-red-600 cursor-pointer"
+  />
+  <label
+    htmlFor="licencia"
+    className="text-sm font-semibold text-gray-700 cursor-pointer"
+  >
+    Licencia
+  </label>
+</div>
+
+
+
+
       {/* Botón */}
       <div className="col-span-3">
         <button className="bg-red-600 w-full py-2 rounded text-white text-sm font-semibold hover:bg-red-700 shadow-md">
-          Agregar cliente
+          Agregar Empleado
         </button>
       </div>
 
